@@ -7,16 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="#2C2B2B">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bienvenido!"
+        android:textColor="#E43203"
         android:textStyle="bold"
         android:gravity="center"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:layout_marginTop="50px"
     />
 
@@ -24,12 +26,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresar Usuario"
+        android:textColor="#E43203"
         android:textSize="20sp"
         android:layout_marginTop="120px"
         />
 
     <EditText
         android:id="@+id/editUsuario"
+        android:textColor="#E43203"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         />
@@ -38,12 +42,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresar Contraseña"
+        android:textColor="#E43203"
         android:textSize="20sp"
         android:layout_marginTop="80px"
         />
 
     <EditText
         android:id="@+id/editContraseña"
+        android:textColor="#E43203"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -54,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recordar Usuario"
+        android:textColor="#E43203"
         android:textStyle="bold"
         android:buttonTint="#E43203"
         />

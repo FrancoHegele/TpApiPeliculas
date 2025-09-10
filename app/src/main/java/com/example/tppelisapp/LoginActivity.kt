@@ -41,6 +41,13 @@ class LoginActivity : AppCompatActivity() {
     btnIngresar = findViewById(R.id.btnIngresar)
     btnRegistrarse = findViewById(R.id.btnRegistrarse)
 
+
+    btnIngresar.setOnClickListener {
+
+        validarLogin();
+    }
+
+
     btnRegistrarse.setOnClickListener {
 
         val intent = Intent(this, RegistroActivity::class.java)
@@ -50,13 +57,11 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    validarLogin();
 
 
     }
 
     fun validarLogin(){
-
 
         if(etUsuario.text.toString().isEmpty() || etContraseña.text.toString().isEmpty()){
 
@@ -73,6 +78,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
     }
+
 
 
 }

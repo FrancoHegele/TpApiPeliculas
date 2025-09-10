@@ -38,7 +38,15 @@ class RegistroActivity : AppCompatActivity() {
 
 
 
-        registrarUsuario();
+        //registrarUsuario();
+
+        btnNuevoRegistro.setOnClickListener {
+
+            val intent = Intent(this, MainActivity::class.java)
+            //intent.putExtra("Nombre: ", etUsuario.text.toString())
+            startActivity(intent)
+            finish()
+        }
 
     }
 
@@ -60,7 +68,6 @@ class RegistroActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
     }
 
 
